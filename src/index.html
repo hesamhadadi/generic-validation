@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation</title>
+    <link rel="stylesheet" href="pico.min.css" />
+  </head>
+
+  <body>
+    <div class="container" style="margin-top: 30px">
+      <form id="form">
+        <div class="grid">
+          <label for="firstname">
+            First name
+            <input
+              type="text"
+              id="firstname"
+              name="firstname"
+              placeholder="First name"
+            />
+            <ul class="errors"></ul>
+          </label>
+
+          <label for="lastname">
+            Last name
+            <input
+              type="text"
+              id="lastname"
+              name="lastname"
+              placeholder="Last name"
+            />
+            <ul class="errors"></ul>
+          </label>
+        </div>
+
+        <label for="age">Age</label>
+        <input
+          type="text"
+          id="age"
+          name="age"
+          placeholder="Age"
+        />
+        <ul class="errors"></ul>
+
+        <label for="email">Email address</label>
+        <input
+          type="text"
+          id="email"
+          name="email"
+          placeholder="Email address"
+        />
+        <ul class="errors"></ul>
+        <button id="submit-button">Submit</button>
+      </form>
+    </div>
+    <script type="module" src="./index.ts"></script>
+  </body>
+</html>
